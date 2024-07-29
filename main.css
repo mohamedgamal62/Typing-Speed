@@ -1,0 +1,137 @@
+:root {
+    --main-color: #2196f3;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif ,"open sans";
+}
+.game {
+    background-color: #eee;
+    min-height: 100vh;
+}
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+.game .name {
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.game .massege {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 6px;
+}
+.game .massege span {
+    font-weight: bold;
+    color: #009688;
+}
+.game .massege span::before {
+    content: ' [ ';
+}
+.game .massege span::after {
+    content: ' ] ';
+}
+.start {
+    background-color: #009688;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.start:hover {
+    background-color: #003832;
+}
+.the-word {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    user-select: none;
+    color: var(--main-color);
+}
+input{
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: capitalize;
+    border:  2px solid var(--main-color);
+    caret-color: var(--main-color);
+}
+input:focus {
+    outline: none;
+}
+.upcoming-words {
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #009688;
+    font-weight: bold;
+}
+.upcoming-words div {
+    margin: 4px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    background-color: var(--main-color);
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+}
+.control span {
+    font-weight: bold;
+    color: #009688;
+}
+.finish {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+}
+.finish .good {
+    color: var(--main-color);
+}
+.finish .bad {
+    color: red;
+}
+
+select{
+    outline: none;
+    border: none;
+    background-color: #eee;
+    font-weight: bold;
+    color: #009688;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+select option {
+   
+}
+select option:hover {
+    background-color: black;
+    list-style: none;
+}
